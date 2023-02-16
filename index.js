@@ -7,9 +7,10 @@ function setup() {
   for (let i = 0; i < 10; i++) {
     let c = createSprite(
       random(100, width-100),
-      random(100, height-100),
+      0,
       10, 10);
     c.shapeColor = color(255, 255, 0);
+    c.velocity.y = random(1, 5);
     coins.add(c);
   }
   player = createSprite(50, 50, 40, 40);
