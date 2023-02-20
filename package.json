@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "web-dev-server --node-resolve --open --watch",
     "build": "rollup --config",
-    "deploy": "gh-pages -d dist"
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
   "dependencies": {
     "p5": "^1.5.0",
     "p5.play": "^3.6.2",
+    "rollup": "^2.79.1",
     "three": "^0.149.0"
   },
   "devDependencies": {
